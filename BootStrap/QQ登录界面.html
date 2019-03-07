@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="font_1040536_pc03cjnmi5/iconfont.css" />
+		<style>
+			.qq {
+				width:300px;
+				background-color:red;
+				position: fixed;
+				top:0px;
+				left:0px;
+				z-index: 1;
+				transition: all 0.5s;
+			}
+			@media only screen and (max-width:992px ) {
+				.qq {
+					width:150px;
+				}
+			}
+			@media only screen and (max-width:768px ) {
+				.qq {
+					display: none;
+				}
+			}
+			@media only screen and (max-width: 768px) {
+				.qqlh {
+					opacity: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="qq">
+			    <img class="changeimg" src="01-1.jpg" style="width:100%;height:100%;"/>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="  col-md-9 col-lg-9  col-md-offset-3 col-lg-offset-3" style="height:730px;">
+					<div class="row" style="height:60px;">
+						<ul class="list-unstyled list-inline" style="height:40px;float: right; margin-top:20px ;margin-right:20px;">
+							<li class="qqlh" style="padding:0 5px;margin-right:30px;color:white;background-color: rgba(255,0,0,0.8);border-radius:20% 20%;position: relative;"><img src="logo3.png" style="position: absolute;left:-30px;top:-10px;"></span>QQ靓号</li>
+							<li style="padding:0 5px;margin-right:30px;color:#888;position: relative;"><span class='iconfont icon-youxiang' style="position:absolute;left:-12px;top: -2px;"></span>邮箱账号</li>
+							<li class="changelang" style="padding:0 5px;margin-right:30px;color:#888;position: relative;">简体中文<span style="vertical-align: middle;display: inline-block;" class="iconfont icon-sanjiaoxing"></span>
+								<div class="lang" style="width:60px;height:40px;position: absolute;top:20px;left:5px;display: none;">
+									<div style="margin-top:2px">繁體中文</div>
+									<div>English</div>
+								</div>
+							</li>
+							<li style="padding:0 5px;margin-right:30px;color:#888" ;>意见反馈</li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="col-xs-10 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4" style="height:120px;">
+							<h1>欢迎注册QQ</h1>
+							<div>
+								<span style="font-size:24px;color:#333;line-height: 60px;">每一天，乐在沟通。</span>
+								<span style="margin-left:20px; font-size:20px;color: deepskyblue;line-height: 60px;">免费靓号</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="row" style="height:480px;background-color: white;">
+						<form class="form-horizontal">
+							<div class="form-group has-feedback" id="name">
+								<div class="col-xs-8 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+									<input style="font-size: 16px;" type="text" id="inputname" class="form-control input-lg" placeholder="昵称" />
+									<span style="margin-top:10px;color:green" class="nctrue hidden glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+								</div> 
+								<div class="ncwarning hidden col-xs-7 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+									<span class="iconfont icon-gantan" style="color:red"></span>
+									<span style="font-size: 10px;color:red;">昵称不可以为空</span>
+								</div>
+							</div>
+							<div class="form-group" style="height:2px;"></div>
+
+							<div class="form-group has-feedback" id="psd">
+								<div class="col-xs-8 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+									<input style="font-size: 16px;" type="password" id="inputpsd" class="form-control input-lg" placeholder="密码" />
+								</div>
+								<div class="psdwarning hidden col-xs-4 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+									<span class="iconfont icon-gantan" style="color:red"></span>
+									<span style="font-size: 10px;color:red;">密码不能为空</span>
+								</div>
+								<div class="tell hidden col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+
+									<div><span class="iconfont icon-gou1" style="color: green;"></span><span style="font-size: 10px;color:black;">不能包括空格</span></div>
+									<div><span class="iconfont icon-gantan" style="color:lightblue"></span><span style="font-size: 10px;color:black;">长度为8-16个空格</span></div>
+									<div><span class="iconfont icon-gantan" style="color:lightblue"></span><span style="font-size: 10px;color:black;">必须包含字母、数字、符号中至少两种</span></div>
+								</div>
+							</div>
+							<div class="form-group" style="height:2px;"></div>
+							<div class="form-group">
+								<div class="col-xs-3 col-sm-2 col-md-1 col-lg-1 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+									<select name="" class="form-control" style="height:50px;font-size: 12px;">
+										<option value="">+86</option>
+										<option value="">中国 +86</option>
+										<option value="">中国香港特别行政区 +852</option>
+										<option value="">中国澳门特别行政区 +853</option>
+										<option value="">中国台湾地区 +886</option>
+									</select>
+								</div>
+								<div class="col-xs-5 col-sm-4 col-md-3 col-lg-3">
+									<input type="tel" class="msgpop form-control" style="height:50px" placeholder="手机号码" />
+								</div>
+								<div class="telfind col-xs-4 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4" style="font-size: 10px;height:25px;line-height:25px;color:#888">
+									可通过该手机号找回密码
+								</div>
+								<div class="telwarning1 hidden col-xs-4 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+									<span class="iconfont icon-gantan" style="color:red"></span>
+									<span style="font-size: 10px;color:red;">手机号码为空</span>
+								</div>
+								<div class="telwarning2 hidden col-xs-4 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+									<span class="iconfont icon-gou1" style="color:green"></span>
+									<span style="font-size: 10px;color:black;">短信发送成功</span>
+								</div>
+								<div class="telwarning3 hidden col-xs-4 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+									<span class="iconfont icon-gantan" style="color:red"></span>
+									<span style="font-size: 10px;color:red;">手机号码格式不正确</span>
+								</div>
+							</div>
+							<div class="form-group msg hidden">
+								<div class="col-xs-3 col-sm-2 col-md-1 col-lg-1 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+									<input type="text" class="form-control" style="height:40px;font-size: 8px;text-align: center;" placeholder="短信验证码" />
+								</div>
+								<div class="col-xs-5 col-sm-4 col-md-3 col-lg-3">
+									<input type="button" class="form-control msgconfirm" value="发送短信验证" style="height:40px;color:white;background-color: deepskyblue;font-size:18px"></input>
+								</div>
+							</div>
+							<div class="form-group" style="height:2px;"></div>
+							<div class="form-group">
+								<div class="col-xs-8 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+									<input type="submit" class="form-control" value="立即注册" style="height:50px;color:white;background-color: deepskyblue;font-size:18px"></input>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+									<div class="checkbox" style="font-size: 12px;color:gray">
+										<label>
+											<input type="checkbox" checked="checked"/>我已阅读并同意相关服务条款和隐私政策
+										</label>
+										<span style="display: inline-block;vertical-align: middle;" class="iconfont icon-sj"></span>
+
+									</div>
+								</div>
+								<div style="display: none;" class="rule col-xs-4 col-sm-3 col-md-3 col-lg-3 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+									<div style="font-size: 10px;color:deepskyblue">《QQ号码规则》</div>
+									<div style="font-size: 10px;color:deepskyblue">《隐私政策》</div>
+									<div style="font-size: 10px;color:deepskyblue">《QQ空间服务协议》</div>
+
+								</div>
+							</div>
+
+							<div class="form-group" style="height:50px;"></div>
+							<div class="form-group" style="color:#999;font-size: 10px;text-align:center;">
+								Copyright &copy; 1998-2019Tencent All Rights Reserved
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div  style="position: fixed;z-index:2;left:20px;top:10px;"><img src="logo.png" /><span style="color:black;font-size: 35px;vertical-align: middle;padding-left: 10px;">QQ</span></div>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			$(".qq").css({
+				"height":$(document).height()+"px"
+			})
+			$("#inputname").on("blur", function() {
+				if($(this).val() == null || $(this).val() == "") {
+					$("#name").removeClass("has-error");
+					$("#name").removeClass("has-success");
+					$("#name").removeClass("has-warning");
+					$("#name").addClass("has-error");
+					$(".nctrue").addClass("hidden");
+					$(".ncwarning").removeClass("hidden");
+
+				} else {
+					$("#name").removeClass("has-error");
+					$("#name").removeClass("has-success");
+					$("#name").removeClass("has-warning");
+					$("#name").addClass("has-success");
+					$(".nctrue").removeClass("hidden");
+					$(".ncwarning").addClass("hidden");
+				}
+			})
+			$("#inputpsd").on("blur", function() {
+				$(".tell").addClass("hidden");
+				if($(this).val() == null || $(this).val() == "") {
+					$("#psd").removeClass("has-error");
+					$("#psd").removeClass("has-success");
+					$("#psd").removeClass("has-warning");
+					$("#psd").addClass("has-error");
+					$(".psdwarning").removeClass("hidden");
+
+				} else {
+					$("#psd").removeClass("has-error");
+					$("#psd").removeClass("has-success");
+					$("#psd").removeClass("has-warning");
+					$("#psd").addClass("has-success");
+					$(".psdwarning").addClass("hidden");
+				}
+			})
+			$("#inputname").on("focus", function() {
+				$(".nctrue").addClass("hidden");
+				$(".ncwarning").addClass("hidden");
+				$("#name").removeClass("has-error");
+				$("#name").removeClass("has-success");
+				$("#name").removeClass("has-warning");
+			})
+			$("#inputpsd").on("focus", function() {
+				$("#psd").removeClass("has-error");
+				$("#psd").removeClass("has-success");
+				$("#psd").removeClass("has-warning");
+				$(".psdwarning").addClass("hidden");
+				$(".tell").removeClass("hidden");
+			})
+			$(".msgpop").on("focus", function() {
+				$(".msg").removeClass("hidden");
+				$(".telfind").show();
+				$(".telwarning1").addClass("hidden");
+				$(".telwarning2").addClass("hidden");
+				$(".telwarning3").addClass("hidden");
+			})
+			$(".msgconfirm").on("click", function() {
+				var string=$(".msgpop").val();
+				if(string==null||string==""){
+					$(".telfind").hide();
+					$(".telwarning1").removeClass("hidden");
+					$(".telwarning2").addClass("hidden");
+				}else{
+					checkMobile(string);
+				}
+			})
+			//电话号码验证
+			function checkMobile(str) {
+				var re = /^1\d{10}$/
+				if(re.test(str)) {
+					$(".telfind").hide();
+				    $(".telwarning1").addClass("hidden");
+					$(".telwarning2").removeClass("hidden");
+					$(".telwarning3").addClass("hidden");
+				} else {
+					$(".telfind").hide();
+					$(".telwarning1").addClass("hidden");
+					$(".telwarning2").addClass("hidden");
+					$(".telwarning3").removeClass("hidden");
+				}
+			}
+			var i = 1;
+			var k = 1;
+
+			$(".icon-sj").on("click", function() {
+				$(".rule").toggle();
+				$(this).css("transform", "rotate(" + 180 * i + "deg)");
+				$(this).css("transform-origin", "50% 45%");
+				i++;
+			})
+			$(".changelang").on("mouseover", function(ev) {
+				$(".lang").show();
+				$(".icon-sanjiaoxing").css("transform", "rotate(" + 180 * k + "deg)");
+				$(".icon-sanjiaoxing").css("transform-origin", "50% 45%");
+				k++;
+			})
+			$(".changelang").on("mouseleave", function(ev) {
+				$(".lang").hide();
+				$(".icon-sanjiaoxing").css("transform", "rotate(" + 180 * k + "deg)");
+				$(".icon-sanjiaoxing").css("transform-origin", "50% 45%");
+				k++;
+
+			})
+			var j = 2;
+			setInterval(function() {
+				if(j == 4) {
+					j = 1;
+				}
+				$(".changeimg").attr("src","01-"+j+".jpg");
+				j++;
+			}, 2000);
+		</script>
+	</body>
+
+</html>
