@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1>首页</h1>
+    <div>
+        <%if(typeof username=='undefined'){%>
+            <a href="/login.html">请登录</a>
+        <%}else{%>
+            <h1>欢迎<%=username%>登录</h1>
+        <%}%>
+    </div>
+    <img src="1.jpg" alt=""><br>
+    <img src="2.jpg" alt=""><br>
+    <img src="3.jpg" alt="">
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+            var imgpath=$(this).attr('src');
+            window.location.href="/pay.html?imgpath="+imgpath;
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <style>
+        .myform {
+            width:200px;
+            height:80px;
+            background-color:tomato;
+            margin:0 auto;
+            margin-top:260px;
+        }
+        body {
+            background-color:bisque;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+          <h1>登录界面</h1>
+          <div class="myform">
+            <form action="/login" method="post">
+                    <table cellspacing='0' cellpadding='0'>
+                        <tr>
+                            <td>账号:</td>
+                            <td><input type="text" name='username' value="" placeholder="请输入账号"></td>
+                        </tr>
+                        <tr>
+                            <td>密码:</td> 
+                            <td><input type="password" name='psd' value="" placeholder="请输入密码"></td>
+                        </tr>
+                        <tr  style="text-align: center">
+                            <td colspan="2"><input type="submit" value="请登录系统"></td>
+                        </tr>
+                    </table>
+                </form>
+          </div>
+</body>
+</html>
